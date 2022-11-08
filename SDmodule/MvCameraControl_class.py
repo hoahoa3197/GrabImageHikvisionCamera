@@ -2,13 +2,13 @@
 import os 
 from ctypes import *
 
-from PixelType_header import *
-from CameraParams_const import *
-from CameraParams_header import *
-from MvErrorDefine_const import *
+from SDmodule.PixelType_header import *
+from SDmodule.CameraParams_const import *
+from SDmodule.CameraParams_header import *
+from SDmodule.MvErrorDefine_const import *
 
 curDir = os.path.dirname(os.path.abspath(__file__))
-dllPath = os.path.join(curDir, "dll","MvCameraControl.dll")
+dllPath = os.path.join(curDir, "..\dll","MvCameraControl.dll")
 MvCamCtrldll = WinDLL(dllPath)
 class _MV_PY_OBJECT_(Structure):
     pass

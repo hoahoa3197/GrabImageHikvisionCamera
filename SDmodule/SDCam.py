@@ -4,7 +4,7 @@
 ##################################################
 import cv2
 import numpy as np
-from MvCameraControl_class import *
+from .MvCameraControl_class import *
 class SDCapture:
     def __init__(self,color = False):
         self.deviceList = MV_CC_DEVICE_INFO_LIST()

@@ -1,4 +1,4 @@
-from SDCam import SDCapture
+from SDmodule.SDCam import *
 import cv2
 cap = SDCapture(color= True)
 cap.startGrabbing()
